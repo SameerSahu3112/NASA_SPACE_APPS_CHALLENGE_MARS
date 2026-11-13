@@ -1,0 +1,52 @@
+# Environment & Credentials (never commit secrets)
+.env
+.env.*
+!.env.example
+*.env
+*.local
+
+# Python Virtual Environments, Bytecode & Type Checker Machine Configs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+pyrefly.toml
+pyrightconfig.json
+
+# Node & Build Outputs
+node_modules
+dist
+dist-ssr
+*.tsbuildinfo
+
+# Local Scratch & Debug Logs
+scratch/
+chrome_audit_*/
+chrome_verify_*/
+*.log
+
+# IDEs & OS Artifacts
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
