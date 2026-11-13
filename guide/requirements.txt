@@ -1,0 +1,28 @@
+# Voice Recognition and Text-to-Speech
+pyttsx3==2.90
+
+# Whisper for Speech Recognition (better than pyaudio)
+openai-whisper>=20231117
+faster-whisper>=0.10.0
+
+# Ollama for Local LLM (free, no API key needed)
+ollama>=0.1.0
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-ollama>=0.1.0
+
+# Vector Database & Embeddings
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# Document Processing
+python-dotenv>=1.0.0
+
+# API Integration
+requests>=2.31.0
+
+# Future enhancements (optional)
+# openai>=1.0.0  # For GPT integration
+# langchain>=0.0.300  # For advanced RAG
+# chromadb>=0.4.0  # For vector database
+# sentence-transformers>=2.2.0  # For embeddings

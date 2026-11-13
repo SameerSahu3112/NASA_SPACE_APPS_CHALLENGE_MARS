@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mars-ai:
+    build: .
+    container_name: mars-ai-assistant
+    volumes:
+      # Mount data directory for persistence
+      - ./data:/app/data
+      # Mount knowledge base for easy updates
+      - ./knowledge_base:/app/knowledge_base
+    environment:
+      - PYTHONUNBUFFERED=1
+    # For audio device access (Linux only)
+    # devices:
+    #   - /dev/snd:/dev/snd
+    # For X11 forwarding (GUI applications if needed)
+    # network_mode: host
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
